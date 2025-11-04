@@ -1,9 +1,16 @@
-prijzen = {
-"aardbei" : "3",
-"vanille" : "4",
-"chocolade": "5"
+mijn_prijzen = {
+"aardbei" : 3 ,
+"vanille" : 4 ,
+"chocolade": 5
 }
-aanbieding = "aardbei: 3 * [0.8]"
-reclame_tekst = "vandaag in de aanbieding", "aardbei-ijs", "1 liter-slechts","€" "[0 : 4 * 0,8]" 
-print(aanbieding)
-print(reclame_tekst)
+aanbieding = (3 * 0.8)
+reclame_tekst=(f"vandaag in de aanbieding: aardbei-ijs, 1 liter - slechts € {aanbieding}.")
+reclame_tekst2= reclame_tekst [: 24 ]
+reclame_tekst3= reclame_tekst2.upper()
+reclame_tekst4= reclame_tekst3.split() 
+for el in reclame_tekst4:
+    if len(el) > 4:
+        print (el.upper())
+    else:
+        print (el.lower())    
+
